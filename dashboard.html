@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Employee Welfare Network - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+    <nav>
+        <ul class="headsections">
+            <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#innovative-thoughts"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Innovative Thoughts</a></li>
+            <li><a href="#events"><i class="fa fa-calendar" aria-hidden="true"></i> Company Events</a></li>
+            <li><a href="#technical-forum"><i class="fa fa-cogs" aria-hidden="true"></i> Technical Forum</a></li>
+            <li><a href="#job-referrals"><i class="fa fa-briefcase" aria-hidden="true"></i> Job Referrals</a></li>
+            <li><a href="#personal-listings"><i class="fa fa-info-circle" aria-hidden="true"></i> Personal Listings</a></li>
+            <li><a href="#birthdays"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthdays</a></li> <!-- Birthday icon added here -->
+        </ul>
+    </nav>
+    </header>
+    
+
+
+    <h1>Welcome to Corporate Employee Welfare Network</h1>
+
+    <!-- Innovative Thoughts Section -->
+    <section id="innovative-thoughts">
+    <h2>Innovative Thoughts</h2>
+    <form id="ideaForm">
+        <textarea id="ideaText" placeholder="Share your idea..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <h3>Recent Ideas</h3>
+    <div id="ideas-section"></div>
+    </section>
+    
+
+    
+    <!-- Company Events Section -->
+    <section id="events">
+    <h2>Company Events</h2>
+    <div id="events-section"></div>
+    </section>
+    
+    
+    <!-- Technical Forum Section -->
+    <section id="technical-forum">
+    <h2>Technical Forum</h2>
+    <form id="forumForm">
+        <textarea id="forumText" placeholder="Post a question or share an experience..." required></textarea>
+        <button type="submit">Post</button>
+    </form>
+    <h3>Recent Discussions</h3>
+    <div id="forum-posts"></div>
+    </section>
+    
+        
+    
+    <!-- Job Referrals Section -->
+    <section id="job-referrals">
+
+    <h2>Job Referrals</h2>
+    <p>Explore internal job openings and refer colleagues.</p>
+
+    <ul>
+        <li>
+            Software Engineer -
+            <a href="referAFriend.html?jobTitle=Software Engineer">
+                Refer a friend
+            </a>
+        </li>
+
+        <li>
+            Data Analyst -
+            <a href="referAFriend.html?jobTitle=Data Analyst">
+                Refer a friend
+            </a>
+        </li>
+    </ul>
+    </section>
+
+    <section id="personal-listings">
+    <h2>Personal Listings</h2>
+    <ul>
+        <li>
+            <i class="fa fa-building"></i>
+            Property Sale - 3 BHK Apartment
+            <a href="viewProperty.html">View Details</a>
+        </li>
+
+        <li>
+            <i class="fa fa-home"></i>
+            House for Rent - 2 BHK Apartment
+            <a href="viewProperty1.html">View Details</a>
+        </li>
+    </ul>
+    </section>
+    
+    <section id="birthdays">
+
+    <h2>Birthday Reminders</h2>
+    <div id="birthdays-section"></div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Corporate Employee Welfare Network. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="submitIdea.js"></script>
+    <script src="fetchIdea.js"></script>
+
+    <script src="events.js"></script>
+
+    <script src="submitForum.js"></script>   
+    <script src="fetchForum.js"></script>  
+    
+    <script src="birthdays.js"></script>
+
+   
+
+</body>
+</html>
